@@ -1,0 +1,52 @@
+html{
+	padding-left:20%;
+	padding-right:20%;
+	font-family:sans-serif;
+}
+body{
+	justify-content: center;
+	display: flex;
+	width:100%;
+	padding-right:20%;
+
+}
+form{
+	background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); 
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	border:1px solid black;
+	border-radius: 20px;
+	justify-content: center;
+	width: auto;
+	padding: 10%;
+	text-align: center;
+}
+input{
+	width: 200px;
+	position: relative;
+	display: flex;
+	padding: 3%;
+	margin: 10px;
+}
+.form-control,.btn{
+	margin: 10px;
+
+}
+h1{
+	color: gray;
+}
+.btn-primary{
+	margin-left: 20px;
+}
+
+.card,img{
+
+	margin-top: 20%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+img{
+	margin-left: 30%;
+}
+a{
+	text-decoration: blink;
+}

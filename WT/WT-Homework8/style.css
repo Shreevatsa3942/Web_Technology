@@ -1,0 +1,33 @@
+body{
+	font-family: sans-serif;
+	margin:5%;
+	
+}
+table,th,td{
+	border-collapse: separate;
+	border-spacing: 15px;
+	border:2px solid black;
+	border-radius: 10px;
+
+
+}
+table{
+	width: 100%;
+	empty-cells: show;
+	box-shadow:	0 8px 16px 0 rgba(0,0,0,2);
+	background:linear-gradient(pink,lightblue);
+}
+td,th{
+	height: 50px;	
+		
+}
+tbody,tfoot{
+	vertical-align: middle;
+	text-align: center;
+}
+caption{
+	caption-side: top;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: large;
+}

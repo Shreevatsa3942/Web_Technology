@@ -1,0 +1,22 @@
+body{
+	width: 100%;
+	padding:0;
+	margin:0;
+}
+p{
+	border: 2px solid black;
+	height: 200px;
+	background: linear-gradient(pink,lightblue);
+	width: 350px;
+	float: left;
+	margin:10px;
+	border-radius: 20px;
+	padding: 20px;
+	overflow: hidden;
+
+}
+img{
+	width: 100px;
+	float: left;
+	margin: 10px;
+}

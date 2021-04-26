@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Technology</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<form method="POST" action="page2.html">
+		<div class="row">
+			<h2>Registration Form</h2>
+		</div>
+		<div class="row">
+			<div class="col1">
+				<label for="cust_name">Customer Name:</label>
+			</div>
+			<div class="col2">
+				<input type="text" name="cust_name" class="input" required>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col1">
+				<label for="gender">Gender:</label>
+			</div>
+			<div class="col3">
+				<input type="radio" name="gender" value="male" checked>
+				Male
+				<input type="radio" name="gender" value="female">
+				Female
+			</div>
+		</div>
+		<div class="row">
+			<div class="col1">
+				<label for="cust_email" required>Email:</label>
+			</div>
+			<div class="col2">
+				<input type="email" name="cust_email" class="input" required><br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col1">
+				<label for="cust_pass" required>Password: </label>
+			</div>
+			<div class="col2">
+				<input type="password" name="cust_pass" class="input"><br>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col1">
+				<label for="cust_confirm">Confirm Password:</label>
+			</div>
+			<div class="col2">
+				<input type="password" name="cust_confirm" class="input" required><br>
+			</div>
+		</div>
+		
+		<div class="row">
+			<button class="button" type="submit">submit</button>
+		</div>
+	</form>
+</body>
+</html>
