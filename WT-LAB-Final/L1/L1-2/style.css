@@ -1,0 +1,57 @@
+body{
+	font-family: sans-serif;
+	margin:5%;
+	
+}
+table,th,td{
+	border-collapse: collapse;
+	border-spacing: 5px;
+	border:1px solid black; 
+    
+}
+table{
+    border-radius: 10px;
+}
+tbody,thead{
+	vertical-align: middle;
+	text-align: center;
+}
+td,th{
+    height: 40px;
+}
+th{
+    background-color: cornflowerblue;
+    padding: 5px 5px;
+}
+td{
+    padding: 5px 10px;   
+}
+.week{
+    background-color: yellow;
+    font-weight: bold;
+}
+.break{
+    column-width: 50px;
+}
+.free{
+    background-color:gainsboro;
+}
+
+
+caption{
+	caption-side: top;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: large;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.left-none{
+    border-left:none;
+}
+.right-none{
+    border-right: none;
+}
