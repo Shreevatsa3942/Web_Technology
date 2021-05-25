@@ -1,0 +1,70 @@
+*{
+    font-family: sans-serif;
+}
+form{
+    width:500px;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.tab{
+    width: 100%;
+    display: none;
+     
+}
+label{
+    display: block;
+}
+input[type="text"],input[type="date"],select{
+    margin: 10px;
+    margin-left: 30px;
+    padding: 8px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    width:200px;
+}
+input[type="radio"]{
+    margin: 10px;
+    margin-left: 30px;
+}
+textarea{
+    margin: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+button{
+    padding: 10px;
+    width: 100px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: blueviolet;
+    border: none;
+    outline: none;
+    color: white;
+    float: right;
+}
+span{
+    display: block;
+    color:red;
+    font-style: italic;
+    margin-left: 20px;
+}
+section{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+p{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: bisque;
+    margin: 2px 5px;
+    display: inline-flex;
+    border: 1px solid antiquewhite;
+}
+label{
+    font-weight: bold;
+}
