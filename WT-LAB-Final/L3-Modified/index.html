@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <form action="#" method="POST" class="form">
+        <div id="first" class="tab">
+            <h2> Account Set-Up Details</h2>
+            <label for="username">Username:</label>
+            <input type="text" name="username" placeholder="Enter Username" id="username" onblur="isValidUserName()">
+            <span id="msg1" style="display: none;"><small color='red' >Username must be at least 8 charecters</small></span><br>
+            <label for="pwd">Password:</label>
+            <input type="password" name="pwd" placeholder="Enter Password" id="pwd" oninput="isValidPassword()">
+            <span id="msg2" style="display: none;"><small color='red' >Password must be at least 10 charecters<br>Password should include at least one special charecter (&,@,$)</small></span><br>
+            <label for="cpwd">Confirm Password:</label>
+            <input type="password" name="cpwd" placeholder="Confirm Password" id="cpwd" oninput="passwordMatch()">
+            <span id="msg3" style="display: none;"><small color='red' >Password does not match</small></span>
+        </div>
+        <div id="second" class="tab">
+            <h2> Personal Details</h2>
+            <label for="firstname">Firstname:</label>
+            <input type="text" name="firstname" placeholder="Enter Firstname" id="firstname" oninput="isNameValid()">
+            <span id="msg4" style="display: none;"><small color='red' >First charecter must be in capital letter</small></span><br>
+            <label for="lastname">Lastname:</label>
+            <input type="text" name="lastname" placeholder="Enter Lastname" id="lastname">
+            <br>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" name="gender" value="male" id="gender" checked>Male <br>
+            <input type="radio" name="gender" value="male" id="gender">Female <br>
+            <label for="nationality">Nationality:</label> 
+            <select name="nationality" id="nationality">
+                <option value="india">India</option>
+                <option value="america">America</option>
+                <option value="japan">Japan</option>
+                <option value="nepal">nepal</option>
+                <option value="switzerland">Switzerland</option>
+                <option value="england">England</option>
+                <option value="new_zeland">New Zeland</option>
+                <option value="china">China</option>
+            </select><br>
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" name="dob" id="dob" placeholder="Enter Date Of birth">
+        </div>
+        <div id="third" class="tab">
+            <h2>Contact Details</h2>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Enter your Email" oninput="isEmailValid()">
+            <span id="msg5" style="display: none;"><small color='red' >Email must end with '@manipal.edu'</small></span>
+            <label for="phno">Phone Number:</label>
+            <input type="text" name="phno" id="phno" placeholder="Enter your phone Number" oninput="phoneNumberValidation()">
+            <span id="msg6" style="display: none;"><small color='red' >Phone number length must be 10 digit</small></span>
+            <label for="address">Address</label>
+            <textarea name="address" cols="30" rows="5" id="address"></textarea>
+
+        </div>
+        <div id="fourth" class="tab">
+            <h2>Social Media Profiles</h2>
+            <label for="github">Github(optional):</label>
+            <input type="text" name="github" id="github" placeholder="Ex.https://github.com/xyz">
+            <label for="facebook">Facebook(optional):</label>
+            <input type="text" name="facebook" id="facebook"  placeholder="Ex.https://facebook.com/xyz">
+            <label for="twitter">Twitter(optional):</label>
+            <input type="text" name="twitter" id="twitter" placeholder="Ex.https://twitter.com/xyz">
+        </div>
+        <div id="fifth" class="tab">
+            <h2>Academic Details</h2>
+            <label for="ugtitle">UG title:</label>
+            <input type="text" name="ugtitle" id="ugtitle" placeholder="Enter your UG title" oninput="validateUGtitle()">
+            <span id="msg7" style="display: none;"><small color='red' >Enter a valid UG title (BCA,BSC,BCOM,BBM)</small></span>
+            <label for="ug">UG CGPA:</label>
+            <input type="text" name="ug" id="ug" placeholder="Enter your UG CGPA" oninput="validateCGPA(this,8)">
+            <span id="msg8" style="display: none;"><small color='red' >Invalid CGPA</small></span>
+            <label for="pgtitle">PG title:</label>
+            <input type="text" name="pgtitle" id="pgtitle" placeholder="Enter your PG title" oninput="validatePGtitle()">
+            <span id="msg10" style="display: none;"><small color='red' >Enter a valid PG title (MCA|MCOM|MBA|MTECH|MSC)</small></span>
+            <label for="pg">PG CGPA:</label>
+            <input type="text" name="pg" id="pg" placeholder="Enter your PG CGPA" oninput="validateCGPA(this,9)">
+            <span id="msg9" style="display: none;"><small color='red' >Invalid CGPA</small></span>
+            <label for="proj1_title">Project title:</label>
+            <input type="text" name="proj1_title" id="proj1_title" placeholder="Enter your Project name">
+            <label for="proj1_disc">Project Discription:</label>
+            <textarea name="proj1_disc" id="proj1_disc" cols="40" rows="5"></textarea>
+        </div>
+        <div id="sixth" class="tab">
+            <h2>Confirm Registration</h2>
+            <label for="Finalfullname">Fullname:</label>
+            <input type="text" id="Finalfullname" disabled><br>
+
+            <label for="Finalusername">Username:</label>
+            <input type="text" id="Finalusername" disabled><br>
+
+            <label for="Finalgender">Gender:</label>
+            <input type="text" id="Finalgender" disabled><br>
+
+            <label for="Finalnationality">Nationality:</label>
+            <input type="text" id="Finalnationality" disabled><br>
+
+            <label for="Finaldob">Date of Birth:</label>
+            <input type="text" id="Finaldob" disabled><br>
+
+            <label for="Finalemail">Email:</label>
+            <input type="text" id="Finalemail" disabled><br>
+
+            <label for="Finalphno">Phone Number:</label>
+            <input type="text" id="Finalphno" disabled><br>
+
+            <label for="Finalugtitle">UG title:</label>
+            <input type="text" id="Finalugtitle" disabled><br>
+            <label for="Finalugscore">UG Score:</label>
+            <input type="text" id="Finalugscore" disabled><br>
+
+            <label for="Finalpgtitle">PG title:</label>
+            <input type="text" id="Finalpgtitle" disabled><br>
+            <label for="Finalpgscore">PG Score:</label>
+            <input type="text" id="Finalpgscore" disabled>
+        </div>
+        <div id="seventh" class="tab">
+
+        </div>
+        <button type="button" name="next" onclick="validation()">Next</button>
+        <button type="button" name="prev" onclick="prevTab()" >Previous</button>
+        <section>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </section>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
