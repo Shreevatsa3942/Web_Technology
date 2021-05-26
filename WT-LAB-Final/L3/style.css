@@ -16,7 +16,7 @@ form{
 label{
     display: block;
 }
-input[type="text"],input[type="date"],select{
+input[type="text"],input[type="password"],input[type="date"],select{
     margin: 10px;
     margin-left: 30px;
     padding: 8px;
