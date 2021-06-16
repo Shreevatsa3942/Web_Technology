@@ -1,0 +1,23 @@
+*{
+    font-family: sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+.main,.coordinates{
+    width:50%;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.coordinates{
+    padding: 40px;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+.canvas canvas{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: lightgrey;
+    /* margin-left: 6%; */
+}

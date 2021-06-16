@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+#main{
+    width:80%;
+    margin:5% auto;
+    border: 1px solid gray;
+    border-radius: 20px;
+    height: 600px;
+    text-align: center;
+    display: block;
+}
+h3{
+    padding: 10px;
+}
+#canvas{
+    display: inline;
+    margin: 5px auto;
+    border: 1px solid gray;
+    background-color: gray;
+}
+.clear{
+    padding: 10px;
+    background-color: aquamarine;
+    border: none;
+    color: black;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+.clear:hover{
+    /* z-index: 1; */
+    transform: scale(1.2);
+}
+.buttonArea{
+    justify-content: center;
+    float: right;
+    margin:20px;
+}

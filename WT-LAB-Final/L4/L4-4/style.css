@@ -1,0 +1,32 @@
+*{
+    font-family: sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+body{
+    margin-top: 10%;
+}
+.container{
+    height: auto;
+    border: 1px solid gray;
+    padding: 1em;
+    width: 600px;
+    margin:0 auto;
+    border-radius: 20px;
+    background: linear-gradient(to right,aqua,yellow);
+}
+.main{
+    display: inline;
+}
+select{
+    border: none;
+    border-radius: 10px;
+    background-color: cornsilk;
+    /* display: none; */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    list-style: armenian;
+}
