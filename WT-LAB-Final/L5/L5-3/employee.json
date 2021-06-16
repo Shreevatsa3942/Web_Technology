@@ -1,0 +1,12 @@
+[
+    {
+        "name": "John",
+        "designation": "Manager", 
+        "empid": "COMP00123"
+    },
+    {
+        "name": "John", 
+        "designation": "Manager", 
+        "empid": "COMP00123"
+    }
+]

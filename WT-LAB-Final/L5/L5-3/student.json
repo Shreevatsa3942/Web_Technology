@@ -1,0 +1,16 @@
+[{
+    "sl_no":1,
+    "Student_name":"Groot",
+    "Student_address":"Udupi",
+    "Physics":90,
+    "Chemestry":89,
+    "Maths":98
+},
+{
+    "sl_no":2,
+    "Student_name":"Domnik",
+    "Student_address":"Manipal",
+    "Physics":87,
+    "Chemestry":90,
+    "Maths":76
+}]

@@ -1,0 +1,36 @@
+*{
+    font-family: sans-serif;
+}
+.main{
+    width: 500px;
+    height: 100px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    margin: 10% auto;
+    text-align: center;
+    color:gray;
+    justify-content: center;
+}
+table{
+    margin: 0 auto;
+}
+table, th, td {
+    border: 1px solid black;
+    line-height: 30px;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+button{
+    padding: 10px;
+    background-color: aquamarine;
+    border: none;
+    color: black;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: antiquewhite;
+    border: 1px solid aquamarine;
+}
