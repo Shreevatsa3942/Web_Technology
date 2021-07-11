@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="container">
+            <label for="collegename">College Name:</label>
+            <input type="text" name="collegename" id="collegename"><br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email"><br>
+            <label for="contact">Contact Number:</label>
+            <input type="text" name="contact" id="contact"><br>
+            <label for="accomodation">Accomodation Needed??</label><br>
+            <input type="radio" name="accomodation" id="accomodation" value="yes" onchange="visible();">Yes
+            <input type="radio" name="accomodation" id="accomodation" value="no"  onchange="hide();" checked>No
+            <div class="hideField">
+                <label for="no_std">Number of students</label>
+                <input type="text" name="no_std" id="no_std"><br>
+                <label for="no_days">Number of Days</label>
+                <input type="text" name="no_days" id="no_days"><br>
+            </div><br><br>
+            <button type="button" name="submit" id="submit">Submit</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
