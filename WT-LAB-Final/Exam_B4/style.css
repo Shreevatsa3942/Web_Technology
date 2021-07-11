@@ -1,0 +1,23 @@
+*{
+    font-family: sans-serif;
+}
+form{
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10% auto;
+    font-weight: bold;
+}
+#label1{
+    display: block;
+    margin: 10px;
+}
+input[type="text"]{
+    margin-left: 10%;
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    outline: none;
+}
