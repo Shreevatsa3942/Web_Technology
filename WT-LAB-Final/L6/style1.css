@@ -1,0 +1,52 @@
+*{
+    font-family: sans-serif;
+    
+}
+.container{
+    width:800px;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    text-align: center;
+}
+.main{
+    width:500px;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+label{
+    display: block;
+    font-weight: bold;
+}
+input[type="text"],input[type="password"],input[type="date"],select{
+    margin: 10px;
+    margin-left: 30px;
+    padding: 8px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    width:200px;
+}
+button{
+    padding: 10px;
+    width: 100px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: blueviolet;
+    border: none;
+    outline: none;
+    color: white; 
+} 
+
+table,td,thead,tbody,th{
+    border: 1px solid gray;
+    
+    border-collapse: collapse;
+}
+td,th{
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+}
